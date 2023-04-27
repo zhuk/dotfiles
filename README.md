@@ -4,7 +4,7 @@
 ## Install
 Clone the repo to home directory and then install.
 
-```
+``` shell
 git clone https://github.com/zhuk/dotfiles
 cd dotfiles
 sh install.sh
@@ -12,7 +12,7 @@ sh install.sh
 
 ## Tools to install
 ### Install zsh
-```
+``` shell
 # ubuntu install zsh, change to pacman on Arch
 sudo apt install zsh
 sudo chsh -s /bin/zsh <username>
@@ -27,7 +27,7 @@ git clone git@github.com:zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.
 ```
 
 ### Install python3 virtualenv
-```
+``` shell
 # install pip on ubuntu
 sudo apt-get install python3-pip
 
@@ -47,7 +47,7 @@ workon
 
 ### Neovim 
 Build from source to install latest version on Ubuntu
-```
+``` shell
 # install build tools
 sudo apt-get install git build-essential
 sudo apt-get install ninja-build gettext cmake unzip curl
