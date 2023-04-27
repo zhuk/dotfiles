@@ -10,7 +10,16 @@ cd dotfiles
 sh install.sh
 ```
 
-## Development enviroment settings
+## Development environment settings
+
+## Basic tools on Ubuntu
+```
+# install tools
+sudo apt-get install git build-essential
+sudo apt-get install ninja-build gettext cmake unzip curl
+sudo apt install bat ripgrep fzf git-lfs
+```
+
 ### Zsh
 ``` shell
 # ubuntu install zsh, change to pacman on Arch
@@ -48,11 +57,7 @@ workon
 ### Neovim 
 Build from source to install latest version on Ubuntu
 ``` shell
-# install build tools
-sudo apt-get install git build-essential
-sudo apt-get install ninja-build gettext cmake unzip curl
-
-# build source
+# clone and build
 git clone git@github.com:neovim/neovim.git
 make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=$HOME/.local/nvim install
 ```
