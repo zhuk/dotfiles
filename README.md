@@ -1,4 +1,4 @@
-# My personal dotfiles.
+# Personal dotfiles
 
 
 ## Install
@@ -10,8 +10,8 @@ cd dotfiles
 sh install.sh
 ```
 
-## Tools to install
-### Install zsh
+## Development enviroment settings
+### Zsh
 ``` shell
 # ubuntu install zsh, change to pacman on Arch
 sudo apt install zsh
