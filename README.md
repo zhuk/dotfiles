@@ -1,2 +1,2 @@
-Clone to home directory, the sh install.sh
+Clone to home directory, then run sh install.sh
 
