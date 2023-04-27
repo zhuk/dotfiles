@@ -15,4 +15,4 @@ ln -s ${BASEDIR}/tmux.conf ~/.tmux.conf
 ln -s ${BASEDIR}/gitconfig ~/.gitconfig
 
 # pip
-ln -s ${BASEDIR}/pip ~/.config/pip
+ln -s -t ~/.config ${BASEDIR}/pip
