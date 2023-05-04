@@ -49,10 +49,10 @@
 [pull]
 	rebase = true
 
-[http]
-	proxy = http://127.0.0.1:1087
-[https]
-	proxy = socks5://127.0.0.1:1080
+#[http]
+#	proxy = http://127.0.0.1:1087
+#[https]
+#	proxy = socks5://127.0.0.1:1080
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
