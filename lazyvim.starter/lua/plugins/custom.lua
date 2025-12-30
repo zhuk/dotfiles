@@ -12,11 +12,11 @@ return {
   },
 
   -- set background to kill error notify
-  {
-    require("notify").setup({
-      background_colour = "#000000",
-    }),
-  },
+  --  {
+  --     require("notify").setup({
+  --       background_colour = "#000000",
+  --         }),
+  --    },
 
   -- add dap support
   { import = "lazyvim.plugins.extras.dap.core" },

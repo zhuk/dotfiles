@@ -9,6 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+#ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -102,27 +103,26 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias d=docker
-alias dc=docker-compose
+alias dc="docker compose"
 alias dx="docker exec -it "
 alias vim=nvim
 alias vi=nvim
 alias v=nvim
+
+alias k=kubectl
+alias pc=proxychains
  
 alias t="tmux"
 alias ta="tmux attach -t"
 alias tls="t ls"
 alias tn="t new -t"
+alias vsc="/usr/share/code/code --unity-launch "
  
 #export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
-export PATH="$HOME/.local/bin:/usr/bin:$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.local/bin:/usr/bin:$HOME/.cargo/bin:$PATH:/usr/local/go/bin:$HOME/go/bin:/usr/lib"
 
-
-# virtualenv wrapper settings
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-source $HOME/.local/bin/virtualenvwrapper.sh
- 
+# nodejs ssl error
+#export NODE_OPTIONS=--openssl-legacy-provider
 
 ###
 ###FZF
@@ -131,7 +131,7 @@ source $HOME/.local/bin/virtualenvwrapper.sh
 
 export FZF_DEFAULT_COMMAND="fd --exclude={.wine,.git,.idea,.vscode,.sass-cache,node_modules,build,.local,.steam,.m2,.rangerdir,.ssh,.ghidra,.mozilla} --type f --hidden --follow"
 #export FZF_DEFAULT_OPTS='--height 90% --layout=reverse --bind=alt-j:down,alt-k:up,alt-i:toggle+down --border --preview "~/fzf-scope.sh {} " --preview-window=down'
-export FZF_DEFAULT_OPTS='--height 90% --layout=reverse --border --preview "~/fzf-scope.sh {} " --preview-window=down'
+#export FZF_DEFAULT_OPTS='--height 90% --layout=reverse --border --preview "~/fzf-scope.sh {} " --preview-window=down'
 
 # use fzf in bash and zsh
 # Use ~~ as the trigger sequence instead of the default **
@@ -140,5 +140,9 @@ export FZF_COMPLETION_TRIGGER='**'
 # Options to fzf command
 #export FZF_COMPLETION_OPTS=''
 
-#export http_proxy="http://127.0.0.1:1087"
+export http_proxy="http://127.0.0.1:20171"
+export https_proxy="http://127.0.0.1:20171"
 #export https_proxy="socks5://127.0.0.1:1080"
+#export https_proxy="http://127.0.0.1:1087"
+#export http_proxy="http://127.0.0.1:1087"
+#export all_proxy="socks5://127.0.0.1:1080"

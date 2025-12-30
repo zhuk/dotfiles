@@ -35,23 +35,10 @@ git clone git@github.com:zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zs
 git clone git@github.com:zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-### Install python3 virtualenv
+### Install python3 
 ``` shell
 # install pip on ubuntu
 sudo apt-get install python3-pip
-
-# pip installed to ~/.local
-pip3 install -U virtualenv virtualenvwrapper
-
-# then modify .zshrc
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-source $HOME/.local/bin/virtualenvwrapper.sh
-
-# usage
-mkvirtualenv venv0
-workon
 ```
 
 ### Neovim 
