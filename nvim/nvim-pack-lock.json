@@ -46,6 +46,22 @@
       "rev": "02fc1af931cb6e7bb475e4977f530073cfdcc20d",
       "src": "https://github.com/nvim-mini/mini.nvim.git"
     },
+    "nvim-dap": {
+      "rev": "cdfd55a133f63228c55f91378f12908cb2a78ded",
+      "src": "https://github.com/mfussenegger/nvim-dap"
+    },
+    "nvim-dap-lldb": {
+      "rev": "9c795072554b3dbf738d0c9cb29d28d7f820b2b4",
+      "src": "https://github.com/julianolf/nvim-dap-lldb"
+    },
+    "nvim-dap-ui": {
+      "rev": "cf91d5e2d07c72903d052f5207511bf7ecdb7122",
+      "src": "https://github.com/rcarriga/nvim-dap-ui"
+    },
+    "nvim-dap-virtual-text": {
+      "rev": "fbdb48c2ed45f4a8293d0d483f7730d24467ccb6",
+      "src": "https://github.com/theHamsta/nvim-dap-virtual-text"
+    },
     "nvim-lspconfig": {
       "rev": "2010fc6ec03e2da552b4886fceb2f7bc0fc2e9c0",
       "src": "https://github.com/neovim/nvim-lspconfig"
