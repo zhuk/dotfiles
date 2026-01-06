@@ -24,6 +24,7 @@ vim.opt.sidescrolloff = 8 -- Keep 8 columns left/right of cursor
 vim.opt.showmatch = true  -- Highlight matching brackets
 vim.opt.matchtime = 2     -- How long to show matching bracket
 vim.opt.cmdheight = 1     -- Command line height
+vim.opt.winborder= "rounded"
 
 vim.pack.add({
   { src = "https://github.com/vague2k/vague.nvim" },
@@ -111,12 +112,13 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 vim.cmd [[set completeopt+=menuone,noselect,popup]]
 
-vim.lsp.enable({
-  "lua_ls", "cssls", "svelte", "pyright",
-  "rust_analyzer", "clangd",
-  "glsl_analyzer",
-  "tailwindcss", "ts_ls"
-})
+vim.lsp.enable("lua_ls")
+-- vim.lsp.enable({
+--   "lua_ls", "cssls", "svelte", "pyright",
+--   "rust_analyzer", "clangd",
+--   "glsl_analyzer",
+--   "tailwindcss", "ts_ls"
+-- })
 
 require("oil").setup({
   lsp_file_methods = {
@@ -125,7 +127,8 @@ require("oil").setup({
     autosave_changes = true,
   },
   columns = {
-    "icon",
+    -- "permissions",
+    "icon"
   },
   float = {
     max_width = 0.3,
@@ -264,7 +267,6 @@ vim.keymap.set("v", ">", ">gv", { desc = "Indent right and reselect" })
 -- Better J behavior
 vim.keymap.set("n", "J", "mzJ`z", { desc = "Join lines and keep cursor position" })
 
-
 vim.api.nvim_create_autocmd("BufWinEnter", {
   pattern = "*.jsx,*.tsx",
   group = vim.api.nvim_create_augroup("TS", { clear = true }),
@@ -277,3 +279,5 @@ require "vague".setup({ transparent = true })
 local default_color = "vague"
 vim.cmd('colorscheme ' .. default_color)
 
+-- todo: disable treesitter for error.
+vim.treesitter.highlighter.new = function() end
